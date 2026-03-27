@@ -1,0 +1,140 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.project-card {
+  background: var(--bg2);
+  padding: 2.8rem;
+  position: relative;
+  overflow: hidden;
+  transition: background .25s;
+}
+
+.project-card:hover {
+  background: var(--bg3);
+}
+
+.project-card:hover .project-accent-line {
+  width: 100%;
+}
+
+.project-accent-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  transition: width .4s ease;
+}
+
+.project-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, .04);
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.project-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: .9rem;
+  line-height: 1.2;
+}
+
+.project-desc {
+  font-size: .85rem;
+  color: rgba(240, 236, 228, .6);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.project-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: .63rem;
+  letter-spacing: .1em;
+  padding: .3rem .7rem;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.project-tags a {
+  display: inline-flex;
+  align-items: center;
+  margin-left: .4rem;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.project-tags a:hover {
+  color: var(--text);
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'DM Mono', monospace;
+  font-size: .63rem;
+  letter-spacing: .1em;
+
+  padding: .3rem .7rem;
+  border: 1px solid var(--border);
+  color: var(--muted);
+
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.project-link svg {
+  font-size: .9rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}.stat {
+  position: relative;
+  background: var(--bg2);
+  padding: 2.2rem;
+  overflow: hidden;
+}
+
+.stat::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+background: radial-gradient(
+  circle at var(--x) var(--y),
+  rgba(88, 166, 255, 0.18),
+  transparent 40%
+);
+
+  opacity: 0;
+  transition: opacity .25s;
+}
+
+.stat:hover::before {
+  opacity: 1;
+}

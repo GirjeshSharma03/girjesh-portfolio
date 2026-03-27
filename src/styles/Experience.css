@@ -1,0 +1,100 @@
+.achievement-box {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  padding: 1.8rem 2.2rem;
+  background: var(--bg2);
+  margin-bottom: 2.5rem;
+}
+
+.achievement-label {
+  font-family: 'DM Mono', monospace;
+  font-size: .65rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: .6rem;
+}
+
+.achievement-text {
+  font-size: .9rem;
+  color: rgba(240, 236, 228, .75);
+  line-height: 1.7;
+}
+
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--border);
+}
+
+.exp-item {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  border-bottom: 1px solid var(--border);
+  transition: background .2s;
+}
+
+.exp-item:last-child {
+  border-bottom: none;
+}
+
+.exp-item:hover {
+  background: var(--bg2);
+}
+
+.exp-meta {
+  padding: 2.5rem;
+  border-right: 1px solid var(--border);
+}
+
+.exp-period {
+  font-family: 'DM Mono', monospace;
+  font-size: .68rem;
+  color: var(--accent);
+  letter-spacing: .1em;
+  margin-bottom: .4rem;
+}
+
+.exp-company {
+  font-size: .88rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: .3rem;
+}
+
+.exp-loc {
+  font-size: .75rem;
+  color: var(--muted);
+}
+
+.exp-content {
+  padding: 2.5rem;
+}
+
+.exp-role {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: .8rem;
+}
+
+.exp-desc {
+  font-size: .88rem;
+  color: rgba(240, 236, 228, .65);
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .exp-item {
+    grid-template-columns: 1fr;
+  }
+  .exp-meta {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem;
+  }
+  .exp-content {
+    padding: 1.5rem;
+  }
+}
