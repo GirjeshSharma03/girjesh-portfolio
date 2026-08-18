@@ -40,7 +40,7 @@ const portfolio = {
     {
       name: "Street Shop Website",
       description: "Developed a street-fashion themed website featuring product sections and modern design.",
-      tech: ["HTML5", "CSS3"],
+      tech: ["HTML5", "CSS3","JAVASCRIPT"],
       color: "#4ECDC4",
       link: "https://girjeshsharma03.github.io/StreetShop/",
     },
