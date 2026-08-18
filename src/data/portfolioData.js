@@ -42,7 +42,7 @@ const portfolio = {
       description: "Developed a street-fashion themed website featuring product sections and modern design.",
       tech: ["HTML5", "CSS3"],
       color: "#4ECDC4",
-      link: "",
+      link: "https://girjeshsharma03.github.io/StreetShop/",
     },
     {
       name: "Brave Homepage Clone",
